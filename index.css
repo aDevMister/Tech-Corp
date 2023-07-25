@@ -1,0 +1,373 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2rem;
+    padding-top: 2rem;
+    background-color: #800080;
+}
+
+.logo h2 {
+    color: #fff;
+}
+.desktop{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 25px;
+}
+.desktop a{
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 600;
+    color: #fff;
+}
+.desktop button{
+    padding: 10px 25px;
+    cursor: pointer;
+    border: 2px solid #fff;
+    background-color: #800080;
+    border-radius: 15px;
+    color: #fff;
+
+}
+
+ /* -------Hero--------- */
+
+.hero{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+    padding:5rem 0;
+    background-color: #800080;
+}
+.word-x h1{
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 45px;
+}
+
+.word-x p {
+    color: #ddd;
+    font-size: 15px;
+    font-weight: 500;
+    text-align: center;
+}
+
+
+
+.image-x img{
+    height: 20rem;
+    border-radius: 25px;
+
+}
+
+/*------ About Us------- */
+
+.About-Us{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    padding: 5rem 0;
+}
+
+.About-Us h2{
+    color: #800080;
+    font-weight: 600;
+
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.left{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.right{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+
+.right-btn button{
+    padding: 15px 25px;
+    cursor: pointer;
+    background-color:#ddd;
+    color: #800080;
+    border: none;
+    font-weight: 600;
+    border-radius: 15px;
+}
+.left p, .right p{
+    width: 60%;
+}
+/* -----Why-Chose-Us ----*/
+
+.why-chose-us{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10rem 0;
+
+}
+
+.why-chose-us h2{
+    color: #800080;
+    padding-bottom: 2rem;
+}
+
+.col-box{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.col{
+    background-color: #ddd;
+    padding: 2rem 1rem;
+    color: #800080;
+    font-weight: 600;
+    border-radius: 15px;
+
+}
+
+.Skill-level{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 5rem;
+}
+
+.skill-img{
+    height: 20rem;
+}
+
+.skill-txt h1{
+    color: #800080;
+    padding-bottom: 1rem;
+
+}
+
+.skill-para{
+    padding-bottom: 2rem;
+}
+.skill-para p{
+    width: 60%;
+    font-weight: 400;    
+}
+
+.metrics{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.metrics p{
+    color: #b70eb7;
+}
+.app {
+    width: 70%;
+    height: 20px;
+    background-color: rgb(206, 222, 206);
+}
+.sub-bg{
+    background-color:#e778e7 ;
+    width: 50%;
+    height: 20px;
+}
+
+/*--------- Services --------*/
+.services{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10rem 0;
+}
+
+.services h1{
+    color: #800080;
+}
+
+.serv-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.serv-left, .serv-right{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+.serv-con{
+    width: 50%;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px 45px;
+}
+
+.serv-con h3{
+    color:#b70eb7;
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+
+.serv-con p {
+    font-weight: 400;
+    color: #000;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #800080;
+    padding: 2rem 0;
+}
+
+footer h1{
+    color: #fff;
+    font-weight: 600;
+
+}
+
+
+.wrapper-footer{
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+    color: #ddd;
+    padding-top: 2rem;
+}
+.quick-links, .contact-us{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.mobile-screen{
+    display: none;
+}
+.toggle{
+    display: none;
+}
+
+@media screen and (max-width:900px) {
+    .desktop{
+        display: none;
+    }
+    .toggle{
+        display: block;
+    }
+    .toggle{
+        padding: 10px 25px;
+        border-radius: 15px;
+        cursor: pointer;
+        color: #800080;
+        background-color: #fff;
+        border: none;
+    }
+    .mobile-screen{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 0;
+        overflow: hidden;
+        transition: ease-in-out 2s;
+        position: absolute;
+        top: 10%;
+        width: 100%;
+        background-color: #800080;
+
+    }
+    .show{
+        height: 40vh;
+        overflow: hidden;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        transition: ease-in-out 2s;
+        padding-bottom: 15px;
+        background-color: #800080;
+
+    }
+    .show a, .mobile-screen a {
+        text-decoration: none;
+        font-size: 25px;
+        font-weight: 600;
+        color: #fff;
+    }
+    .show button, .mobile-screen button{
+        border: none;
+        cursor: pointer;
+        color: #fff;
+        background-color: #800080;
+        font-size: 25px;
+    }
+    .hero{
+        width: 100%;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .word-x h1{
+        font-size: 25px;
+    }
+    .image-x img{
+        height: 15rem;
+    }
+    .wrapper{
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .why-chose-us{
+        padding: 0;
+    }
+    .Skill-level{
+        flex-direction: column;
+        padding:10rem 0;
+        margin-left: 2rem;
+    }
+    .skill-img img{
+        height: 15rem;
+    }
+    .services{
+        padding: 0;
+    }
+    .serv-box{
+        flex-direction: column;
+    }
+    .serv-con{
+        width: 100%;
+    }
+    .wrapper-footer{
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
